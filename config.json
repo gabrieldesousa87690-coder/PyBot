@@ -1,0 +1,73 @@
+{
+    "bot": {
+        "name": "ShiroBot",
+        "prefix": "!",
+        "version": "1.0.0",
+        "author": "Gerson",
+        "status": "online"
+    },
+
+    "system": {
+        "cooldown": {
+            "global": 1500,
+            "commands": {
+                "resenha": 15000,
+                "reiniciar": 60000
+            }
+        },
+        "timeout": {
+            "response": 10,
+            "action": 30
+        },
+        "anti_ban": {
+            "random_delay_min": 2.5,
+            "random_delay_max": 6.0,
+            "max_actions_per_hour": 100
+        }
+    },
+
+    "permissions": {
+        "owner": [
+            "100000000000001"
+        ],
+        "admin": [
+            "100000000000002",
+            "100000000000003"
+        ],
+        "whitelist": [
+            "100000000000004"
+        ],
+        "blacklist": {
+            "users": [
+                "100000000000005"
+            ],
+            "threads": [
+                "100000000000006"
+            ]
+        }
+    },
+
+    "features": {
+        "prefix_required": true,
+        "allow_events_without_prefix": true,
+        "reply_with_mentions": false,
+        "react_on_commands": true,
+        "log_chat": true,
+        "auto_reply_in_groups": false,
+        "auto_reply_in_dms": true
+    },
+
+    "resenha": {
+        "lingua": "br",
+        "estilo": "zoeira_amigavel",
+        "frases_default": [
+            "Bora marcar aquela resenha hoje! 🤙",
+            "Cheguei pra resenhar, cadê o gelo?",
+            "Posta foto da resenha ai!"
+        ],
+        "groselha_limits": {
+            "max_mensagens_por_dia": 1000,
+            "horario_off": "23:00 - 07:00"
+        }
+    }
+}
